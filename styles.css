@@ -1,0 +1,233 @@
+body{
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background: hsl(204, 43%, 93%);
+    height: 100svh;
+}
+p,
+h2,
+h1{
+    margin: 0 auto;
+    padding: 1.2rem;
+    font-size: 1.3em;
+}
+h1{
+    padding-top: 1.2em;
+}
+span{
+    font-size: 1.3em;
+}
+.container{
+    display: flex;
+    font-family: 'Karla', sans-serif;
+    flex-direction: column;
+    width: 80%;
+    margin: auto 1rem;
+    min-width: 330px;
+    margin-top: 2.5em;
+    box-shadow: 0 5px 10px rgba(5, 4, 4, 0.2);
+    border-radius: 5px 5px 5px 5px;
+}
+.section-one{
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    min-width: 330px;
+    background: hsl(204, 43%, 93%);
+    margin: 0;
+    
+    
+}
+.section-two{
+    font-family: 'Karla', sans-serif;
+    width: 100%;
+    min-width: 330px;
+    margin: 0;
+}
+.white-bg{
+    font-family: 'Karla', sans-serif;
+    background: white;
+    color: hsl(218, 22%, 67%);
+    font-weight: 700;
+    border-radius: 5px 5px 0 0;
+}
+.white-bg .p1{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+    padding-top: 0;
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+}
+.white-bg .p2{
+    padding-top: 0;
+    padding-bottom: 2rem;
+    color: hsl(218, 22%, 67%);
+    font-size: .9em;
+    line-height: 1.9em;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+}
+
+.subscription{
+    background: hsl(179, 62%, 43%);
+    color: white;
+    font-weight: 400;
+    font-size: 0.9rem;
+    font-family: 'Karla', sans-serif;
+}
+.subscription .p3{
+    color: hsl(204, 43%, 80%);
+    font-weight: 400;
+    padding-top: 0;
+    padding-bottom: 0.3em;
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+}
+.subscription span{
+    color: white;
+    font-size: 2.3em;
+    margin: 0;
+    padding-right: 0.3em;
+    font-weight: 700;
+    align-self: center;
+    font-family: 'Karla', sans-serif;
+}
+.subscription .p4{
+    font-size: 1.2em;
+    margin-top: 0;
+    padding-top: 0.3em;
+    padding-bottom: 0.1em;
+    font-family: 'Karla', sans-serif;
+    color: hsl(204, 43%, 93%);
+}
+button{
+    width: 100%;
+    min-width:279px;
+    justify-content: center;
+    min-height: 50px;
+    margin: 1em 0;
+    margin-top: 1.5em;
+    margin-bottom: 1.8em;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    background: hsl(71, 73%, 54%);
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+    box-shadow: 0 5px 10px rgba(5, 4, 4, 0.2);
+}
+
+.why-us{
+    background: hsl(179, 62%, 49%);
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    font-family: 'Karla', sans-serif;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+    
+}
+.why-us .p5{
+    padding-top: 0;
+    padding-bottom: 0;
+    color: hsl(204, 43%, 90%);
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-weight: 400;
+    font-family: 'Karla', sans-serif;
+    width: 57%;
+    margin: 0;
+}
+
+@media (min-width: 1439px){
+    body{
+        height: 100vh;
+        display: flex;
+    }
+    .container{
+        flex-direction: column;
+        width: 50%;
+        max-width: 625px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        font-size: 1rem;          
+      }
+     .section-one{
+          width: 100%;
+    }
+    .section-two{
+        display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
+      }
+      .white-bg{
+        border-radius: 10px 10px 0 0;
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+      .subscription{
+          border-radius: 0 0 0 10px;
+      }
+      .why-us{
+          border-radius: 0 0 10px 0;
+      }
+      .white-bg .p1{
+        font-size: 1.16em;
+        padding-left: 1.7241em;
+      }
+      .white-bg .p2{
+        font-size: 1em;
+        padding-right: 2.9em;
+        padding-left: 2em;
+      }
+      .subscription h2{
+        padding-left: 1.71em;
+      }
+      .subscription .p3{
+        padding-left: 2.223em;
+      }
+      .subscription .p4{
+        font-size: 1.15em;
+        padding-left: 1.935em;
+      }
+      .subscription .p4 button{
+        min-width: 150px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .subscription,
+      .why-us{
+          width: 50%;
+          flex-direction: column;
+      }
+      .why-us .p5{
+        padding-left: 2.225em;
+        line-height: 1.2em;
+        width: 60%;
+      }
+      .why-us h2{
+        padding-left: 1.54em;
+      }
+      .white-bg,
+      .subscription,
+      .why-us{
+        min-height: 50%;
+        
+        margin: 0;
+        padding: 0;
+      }
+      h1{
+        font-size: 1.6em;
+        padding-left: 1.25em;
+      }
+      h2{
+        padding-top: 2em;
+      }
+}
+
