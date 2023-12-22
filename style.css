@@ -1,128 +1,139 @@
-/* font-family: 'Big Shoulders Display', sans-serif;
-font-family: 'Lexend Deca', sans-serif; */
+/* font-family: 'Karla', sans-serif;
+font-family: 'Red Hat Display', sans-serif; */
+
 body{
-    font-size: 0.9375em;
+    height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+    margin: 0;
+    padding: 3.5em 1em 3.5em 1em;
+}
+p, h1,  span, .buttons{
+    padding: 1em 1.5em 1em 1.5em;
+    text-align: center;
+    margin: 0;
+}
+p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    padding: 0 2.2em 1em 2.2em;
+    margin-bottom: 0.5em;
+}
+h1{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
 }
 .container{
-    min-height: 100vh;
+    min-height: 70%;
+    max-height: 95%;
+    background-color: white;
+    border-radius: 25px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    text-align: center;
     align-items: center;
-    margin: 0;
-
 }
-.sedans{
-    background: hsl(32, 77%, 52%);
-    border-radius: 5px 5px 0 0;
-}
-.suvs{
-    background-color: hsl(184, 100%, 22%);
-}
-.luxury{
-    background: hsl(179, 100%, 13%);
-    border-radius: 0 0 5px 5px;
-}
-.sedans,
-.suvs,
-.luxury{
-    padding: 2rem;  
-    
-}
-
-p{
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
-    color: hsla(0, 0%, 100%, 0.75);
-    font-size: 0.7rem;
-    font-stretch: expanded;
-    margin: 0;
-    padding: 0.625em 0;
-    min-height: 2rem;
-    word-spacing: 0.125rem;
-    max-width: 12.5rem;
-    line-height: 1.25rem;
-    word-wrap: break-word;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-h2{
-    font-family: 'Big Shoulders Display', sans-serif;
-    font-weight: 700;
-    color: hsl(0, 0%, 95%);
-    font-size: 2.3em;
-    min-width: 4rem;
-    margin-bottom: 0.5rem;
-}
-img{
-    min-height: 1rem;
-    min-width: 2rem;
-    max-width: 3.5rem;
-    margin-top: 0;
-    padding-top: 0;
-    
-}
-button{
-    background: hsl(0, 0%, 95%);
-    text-decoration: none;
-    border: none;
-    font-size: 0.68em;
+.annual-plan{
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    margin: 0 1.5em 1em 1.5em;
+    text-align: center;
+    justify-content: center;
+    padding: 1em;
+    text-align: center;
     border-radius: 15px;
-    padding: 0.625rem 1.56rem ;
-    font-family: 'Lexend Deca', sans-serif;
+}
+.annual-plan img{
+    padding: 0;
+}
+.annual-plan span{
+    padding: 0;
+}
+.annual-plan a{
+    padding: 1em 0 0 0;
+    text-align: center;
+    color: hsl(245, 75%, 52%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+}
+.annual-plan p{
+    padding: 0;
+    margin-bottom: 0;
+}
+.annual-plan span{
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    padding: 0.3em 3.5em 0 1em;
+    font-size: 0.95em;
+    text-align: center;
+}
+.annual-plan p{
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+}
+.buttons{
+    max-width: 85%;
+    min-width: 85%;
+    padding: 0;
+    min-height: 3.3em;
+    border-radius: 10px;
+    border-style: none;
+    text-align: center;
     cursor: pointer;
 }
-.sedans button:hover {
-    background: transparent;
-    outline: 1px solid hsl(0, 0%, 95%);
-    color: hsl(0, 0%, 95%);
+#proceed{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 1em;
+    box-shadow: 0px 10px 3em hsl(225, 100%, 94%);
+    z-index: 0;
+    margin-bottom: 0.6em;
 }
-.suvs button:hover {
-    background: hsl(184, 100%, 22%);
-    outline: 1px solid hsl(0, 0%, 95%);
-    color: hsl(0, 0%, 95%);
-
+#cancel{
+    background-color: white;
+    margin-bottom: 0.5em;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    font-size: 1em;
 }
-.luxury button:hover {
-    background: hsl(179, 100%, 13%);
-    outline: 1px solid hsl(0, 0%, 95%);
+#hero-image{
+    width: 100%;
+    border-radius: 25px 25px 0 0;
     
 }
 
-
-
-
-@media (min-width: 27.3125em){
-    .sedans,
-    .suvs,
-    .luxury{
-    padding: 2rem;
-    margin: 0;  
-    
-}
-}
-
-
-@media (min-width: 760px){
-    .container{
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+@media only screen and (min-width: 1440px) {
+    body{
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
     }
-    .sedans,
-    .suvs,
-    .luxury{
-        max-width: 10.62rem;
+    
+    .container{
+        max-height: 100%;
+        max-width: 29%;
+        min-height: 66%;
         
     }
-
-    .sedans{
-        border-radius: 5px 0 0 5px;
+    #proceed{
+        box-shadow: 0px 20px 1em hsl(225, 100%, 94%);
     }
-    .luxury{
-        border-radius: 0 5px 5px 0;
-    }
-    p{
-        margin-bottom: 3rem;
+    .annual-plan{
+        margin: 0 0 1em 0;
+        max-width: 85%;
+        min-width: 85%;
+        padding: 1em 0;
     }
 }
+
