@@ -5,12 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Order summary card</title>
-  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Stats preview card component</title>
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -19,25 +22,36 @@
 </head>
 <body>
 <section class="container">
-  <img src="images/illustration-hero.svg" id="hero-image" alt="illustration-hero">
-  <h1>Order Summary </h1>
-
-  <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
-    device anywhere you like!</p>
-
-  <div class="annual-plan">
-    <img src="images/icon-music.svg" alt="music-icon">
-  <span>
-    Annual Plan <p>$59.99/year</p>
-  </span>
-
-  <a href="#">Change</a>
+  <div class="image-bg">
+    <img src="images/image-header-mobile.jpg" class="hidden-desktop" alt="image-header-mobile">
   </div>
-  <br>
-    <button class="buttons" id="proceed">Proceed to Payment</button>
-  <button class="buttons" id="cancel">Cancel Order</button>
-</section>
+  <div class="down-section">
+    <h1>
+      Get <span style="color: hsl(277, 64%, 61%);">insights</span> that help your business grow.
+    </h1>
+    <p id="p-description">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
   
+    <div class="desktop-layout">
+      <div class="each-column">
+        <h2>10k+</h2>
+        <p id="stats-desc">COMPANIES</p>
+      </div>
+      <div class="each-column">
+        <h2>314</h2>
+        <p id="stats-desc">TEMPLATES</p>
+      </div>
+      <div class="each-column">
+        <h2>12M+</h2>
+        <p id="stats-desc">QUERIES</p>
+      </div>
+    </div>
+  </div>
+  <div class="desktop-image-container">
+    <img src="images/image-header-desktop.jpg" class="hidden-mobile" alt="image-header-desktop">
+  </div>
+ </section>
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
