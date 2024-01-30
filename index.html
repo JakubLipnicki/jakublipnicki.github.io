@@ -1,125 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Frontend Mentor | Social proof section</title>
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+        <link rel="stylesheet" href="style.css" />
 
-  </head>
-  <body>
-    <section class="container">
-      <header>
-        <h1>10,000+ of our users love our products.</h1>
-  
-        <p class="header-description">We only provide great products combined with excellent customer service.
-          See what our satisfied customers are saying about our services.</p>
-      </header>
-      <main>  
-        <div class="ratings">
-          <div class="rating-box" id="rev">
-            <div class="stars-box">
-              <img src="images/icon-star.svg" alt="icon-star">  
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-            </div>
-            <p class="rating-p">
-              Rated 5 Stars in Reviews
-            </p>
-          </div>
-          <div class="rating-box" id="guru">
-            <div class="stars-box">
-              <img src="images/icon-star.svg" alt="icon-star">  
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-            </div>
-            <p class="rating-p">
-              Rated 5 Stars in Report Guru
-            </p>
-          </div>
-          <div class="rating-box" id="tech">
-            <div class="stars-box">
-              <img src="images/icon-star.svg" alt="icon-star">  
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-              <img src="images/icon-star.svg" alt="icon-star">
-            </div>
-            <p class="rating-p">
-              Rated 5 Stars in BestTech
-            </p>
-          </div>
-        </div>
-        
-        
-        <div class="user-reviews-block">
-          <div class="review-card" id="colton">
-            <div class="user">
-              <img src="images/image-colton.jpg" alt="colton.jpg">
-              <div class="user-info">
-                <span class="username">Colton Smith </span>
-                <span class="user-type">Verified Buyer</span>
-              </div>
-            </div>
-            <p class="review-p">
-              " We needed the same printed design as the one we had ordered a week prior.
-              Not only did they find the original order, but we also received it in time.
-              Excellent! "
-            </p>
-          </div>
-          
-          <div class="review-card" id="irene">
-            <div class="user">
-              <img src="images/image-irene.jpg" alt="irene.jpg">
-              <div class="user-info">
-                <span class="username">Irene Roberts</span> 
-                <span class="user-type">Verified Buyer</span>
-              </div>
-            </div>
-            <p class="review-p" id="irene-p">
-              " Customer service is always excellent and very quick turn around. Completely
-              delighted with the simplicity of the purchase and the speed of delivery. "
-            </p>
-          </div>
-          <div class="review-card" id="anne">
-            <div class="user">
-              <img src="images/image-anne.jpg" alt="anne.jpg">
-              <div class="user-info">
-                <span class="username">Anne Wallace</span>
-                <span class="user-type">Verified Buyer</span>
-              </div>
-            </div>
-            <p class="review-p">
-              " Put an order with this company and can only praise them for the very high
-              standard. Will definitely use them again and recommend them to everyone! "
-            </p>
-          </div>
-        </div>
-        
-      </main>
-    </section>
-    
+        <title>Frontend Mentor | Ping coming soon page</title>
+        <script
+            src="https://kit.fontawesome.com/8ebeed152d.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <section class="container">
+            <header>
+                <img src="images/logo.svg" alt="logo" class="logo" />
+                <h1>We are launching <span class="header-span">soon!</span></h1>
+                <h3>Subscribe and get notified</h3>
+            </header>
+            <main>
+                <form action="">
+                    <div class="input-field">
+                        <input
+                            type="email"
+                            name=""
+                            id=""
+                            placeholder="Your email address..."
+                            class="email-input"
+                        />
+                    </div>
+                    <div class="button-field">
+                        <input
+                            type="submit"
+                            value="Notify Me"
+                            class="submit-button"
+                        />
+                    </div>
+                </form>
+                <img
+                    src="images/illustration-dashboard.png"
+                    alt="illustration-dashboard"
+                    class="dashboard"
+                />
+            </main>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-  </body>
+            <footer>
+                <div class="socials-images">
+                    <i
+                        class="fa-brands fa-facebook-f fa-lg"
+                        style="color: #758ef5"
+                    ></i>
+                    <i
+                        class="fa-brands fa-twitter fa-lg"
+                        style="color: #758ef5"
+                    ></i>
+                    <i
+                        class="fa-brands fa-instagram fa-lg"
+                        style="color: #758ef5"
+                    ></i>
+                </div>
+                <p class="copyright">
+                    &copy;Copyright Ping. All rights reserved.
+                </p>
+            </footer>
+            <!-- 
+      <footer>
+          <p class="attribution">
+              Challenge by
+              <a
+                  href="https://www.frontendmentor.io?ref=challenge"
+                  target="_blank"
+                  >Frontend Mentor</a
+              >. Coded by <a href="#">Your Name Here</a>.
+          </p>
+      </footer> -->
+        </section>
+        <script src="app.js"></script>
+    </body>
 </html>
